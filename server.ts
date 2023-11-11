@@ -1,6 +1,6 @@
 import express from "npm:express";
 import cors from "npm:cors";
-import bodyParser from "https://esm.sh/body-parser";
+// import bodyParser from "https://esm.sh/body-parser";
 import send from "./send.ts";
 
 const corsHeaders = {
@@ -11,7 +11,7 @@ const corsHeaders = {
 
 const app = express();
 const port = 3000;
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 app.use(
   cors({
@@ -19,7 +19,7 @@ app.use(
   })
 );
 
-// app.use(express.json());
+app.use(express.json());
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
