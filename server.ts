@@ -34,32 +34,33 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/", async (req, res) => {
-  const body = req.body;
-  const { emailArray, link, template } = body;
-  const { logo, name, TemplateName, email, subject, from } = template;
-  console.log("request received");
-  emailArray.forEach(
-    async (person: {
-      firstName: string;
-      emails: { email: string; status: string };
-    }) => {
-      const emailprops = {
-        subject,
-        from,
-        link,
-        TemplateName,
-        logo,
-        teamName: name,
-        companyEmail: email,
-        firstName: person.firstName,
-      };
-      try {
-        await send(person.emails[0].email, emailprops);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  );
+  // const body = req.body;
+  // const { emailArray, link, template } = body;
+  // const { logo, name, TemplateName, email, subject, from } = template;
+  // console.log("request received");
+  // emailArray.forEach(
+  //   async (person: {
+  //     firstName: string;
+  //     emails: { email: string; status: string };
+  //   }) => {
+  //     const emailprops = {
+  //       subject,
+  //       from,
+  //       link,
+  //       TemplateName,
+  //       logo,
+  //       teamName: name,
+  //       companyEmail: email,
+  //       firstName: person.firstName,
+  //     };
+  //     try {
+  //       await send(person.emails[0].email, emailprops);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   }
+  // );
+  console.log("gotten you o", req.body);
 
   res.send(JSON.stringify("Hello World!"));
 });
