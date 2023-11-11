@@ -1,5 +1,5 @@
 import Welcome from "./emails/Welcome.tsx";
-import { Resend } from "npm:resend";
+import { Resend } from "https://esm.sh/resend";
 
 const resend = new Resend("re_hBwZyUvG_44z8Ne6XHHB859sdsfMckREQ");
 
