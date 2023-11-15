@@ -1,4 +1,3 @@
-// @deno-types="npm:@types/express@^4.17"
 import express from "https://esm.sh/express";
 import cors from "https://esm.sh/cors";
 // import bodyParser from "https://esm.sh/body-parser";
