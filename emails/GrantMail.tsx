@@ -16,7 +16,7 @@ import {
   Tailwind,
   Text,
   Link,
-} from "https://esm.sh/@react-email/components@0.0.11";
+} from "npm:@react-email/components@0.0.11";
 
 interface VercelInviteUserEmailProps {
   username?: string;
