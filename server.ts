@@ -1,3 +1,4 @@
+// @deno-types="npm:@types/express@^4.17"
 import express from "https://esm.sh/express";
 import cors from "https://esm.sh/cors";
 // import bodyParser from "https://esm.sh/body-parser";
@@ -10,6 +11,7 @@ const corsHeaders = {
 };
 
 const app = express();
+const router = express.Router();
 const port = 3000;
 // app.use(bodyParser.json());
 
@@ -23,6 +25,12 @@ app.use(express.json());
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
+});
+
+router.post("/welcome", async (req, res) => {
+  const body = req.body;
+  const email = body.email;
+  res.send(`Mock sending to ${email}`);
 });
 
 app.get("/", async (req, res) => {
