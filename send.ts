@@ -33,7 +33,7 @@ async function send(to, props) {
   const EmailTemplate = determineTemplate(TemplateName);
   try {
     const data = await resend.emails.send({
-      from: `Northwest Grants <onboarding@pguild.xyz>`,
+      from: `Northwest Grants <admin@northwestgrants.com>`,
       to: [`${to}`],
       subject: `You are Qualified!`,
       react: EmailTemplate(props),
