@@ -1,7 +1,5 @@
 import GrantMail from "./emails/GrantMail.tsx";
-import { Resend } from "npm:resend";
-
-const resend = new Resend("re_hBwZyUvG_44z8Ne6XHHB859sdsfMckREQ");
+import resend from "./lib/resend.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
