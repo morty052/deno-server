@@ -3,10 +3,12 @@ const router = express.Router();
 const userRoute = router;
 
 userRoute.post("/", async (req, res) => {
-  console.log("endpoint reached");
   const body = req.body;
   const email = body.email;
-  res.send(`Mock sending to ${email}`);
+  console.log("endpoint reached", email);
+  res.send({
+    message: `Mock sending welcome to ${email}`,
+  });
 });
 
 userRoute.post("/welcome", async (req, res) => {

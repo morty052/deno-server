@@ -78,8 +78,6 @@ const GrantMail = (props: emailProps) => {
 
             <Section className="text-center mt-[32px] mb-[32px]">
               <Button
-                pX={20}
-                pY={12}
                 className="bg-[#000000] px-4 py-2 rounded text-white text-[12px] font-semibold no-underline text-center"
                 href={inviteLink}
               >
