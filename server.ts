@@ -10,7 +10,6 @@ const corsHeaders = {
 };
 
 const app = express();
-const router = express.Router();
 const port = 3000;
 // app.use(bodyParser.json());
 
@@ -26,11 +25,11 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-router.post("/welcome", async (req, res) => {
-  const body = req.body;
-  const email = body.email;
-  res.send(`Mock sending to ${email}`);
-});
+// router.post("/welcome", async (req, res) => {
+//   const body = req.body;
+//   const email = body.email;
+//   res.send(`Mock sending to ${email}`);
+// });
 
 app.get("/", async (req, res) => {
   //   await send();
