@@ -51,7 +51,7 @@ const GrantMail = (props: emailProps) => {
   return (
     <Html>
       <Head />
-      <Preview>{previewText}</Preview>
+      <Preview> you qualify via region for a grant from us</Preview>
       <Tailwind>
         <Body className="bg-white my-auto mx-auto font-sans">
           <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] w-[465px]">
