@@ -10,6 +10,8 @@ const corsHeaders = {
     "authorization, x-client-info, apikey, content-type",
 };
 
+const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 const app = express();
 const port = 3000;
 const router = express.Router();
@@ -58,6 +60,7 @@ app.post("/", async (req, res) => {
         firstName: person.firstName,
       };
       try {
+        await wait(1000);
         await send(person.emails[0].email, emailprops);
       } catch (error) {
         console.log(error);
