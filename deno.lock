@@ -4,7 +4,8 @@
     "specifiers": {
       "npm:@react-email/components@0.0.11": "npm:@react-email/components@0.0.11_react@18.2.0",
       "npm:cors": "npm:cors@2.8.5",
-      "npm:express": "npm:express@4.18.2"
+      "npm:express": "npm:express@4.18.2",
+      "npm:resend": "npm:resend@2.0.0"
     },
     "npm": {
       "@alloc/quick-lru@5.2.0": {
@@ -1162,6 +1163,12 @@
       "regenerator-runtime@0.14.0": {
         "integrity": "sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==",
         "dependencies": {}
+      },
+      "resend@2.0.0": {
+        "integrity": "sha512-jAh0DN84ZjjmzGM2vMjJ1hphPBg1mG98dzopF7kJzmin62v8ESg4og2iCKWdkAboGOT2SeO5exbr/8Xh8gLddw==",
+        "dependencies": {
+          "@react-email/render": "@react-email/render@0.0.9_react@18.2.0"
+        }
       },
       "resolve@1.22.8": {
         "integrity": "sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==",

@@ -1,5 +1,5 @@
 import GrantMail from "./emails/GrantMail.tsx";
-import { Resend } from "https://esm.sh/resend";
+import { Resend } from "npm:resend";
 
 const resend = new Resend("re_hBwZyUvG_44z8Ne6XHHB859sdsfMckREQ");
 
