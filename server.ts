@@ -1,5 +1,5 @@
-import express from "https://esm.sh/express";
-import cors from "https://esm.sh/cors";
+import express from "npm:express";
+import cors from "npm:cors";
 // import bodyParser from "https://esm.sh/body-parser";
 import send from "./send.ts";
 
